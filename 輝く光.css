@@ -1,0 +1,258 @@
+/*ホームページ,all*/
+@media (prefers-color-scheme: light) {
+	html{
+		background-color:#fefefe;
+		color:#292929;
+	}
+	::selection{
+		background-color:#d5cae8;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	html{
+		background-color:#292929;
+		color:#ccc;
+	}
+	::selection{
+		background-color:#9c27b0;
+	}
+	input{
+		background-color:#292929;
+		color:#ccc;
+	}
+	header{
+		filter: brightness(90%);
+	}
+	a{
+		filter: brightness(125%);
+	}
+	img,iframe{
+		filter: brightness(90%);
+	}
+}
+*{
+	transition:0.25s ease 0s all;
+	width:auto;
+	height:auto;
+}
+input{
+	font-size:13px;
+	margin:0.5em;
+}
+body{
+	font-family:Arial;
+	margin-top:87.781px;
+	font-size:16px;
+}
+/*.children[0]*/
+p{
+	font-size:16px;
+}
+noscript>iframe{
+	border:none;
+	height:100vh;
+	width:100vw;
+	position: fixed;
+	top:0;
+	left:0%;
+	z-index:1;
+	display:block;
+	transition:0s;
+}
+header{
+	z-index:1;
+	color:#222;
+	margin:0;
+	width:100%;
+	padding-left:5em;
+	position: fixed;
+	top: 0;
+	left:0;
+	background:#faf8c3;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	user-select:none;
+}
+header *{
+	display:inline-block;
+	outline:none;
+}
+header div{
+	width:10em;
+	height:1em;
+}
+#ope{
+	position: fixed;
+	top:1em;
+	left:0.5em;
+	width:4em;
+	height:4em;
+	padding:0;
+}
+#menu{
+	width:auto;
+	height:auto;
+}
+@media screen and (max-width : 480px){
+	
+	
+}
+.head,header h2{
+	display: inline-block;
+	padding:1em;
+	margin:0.1em 1em;
+}
+.head{
+	background:rgba(255,255,255,0.5);
+	border-radius:1em;
+	transition: background 0.2s;
+	border:none;
+	cursor:pointer;
+}
+.head:hover{
+	background:rgba(255,255,255,0.75);
+}
+a {
+	color:#378df0;
+	text-decoration:none;
+}
+#rogo{
+	height:2em;
+	width:2em;
+	background-image:url('/icon-512.png');
+	border-radius:1em;
+	box-shadow: 0 0 0.5em 0 #000;
+	transform: translate(0,0.25em);
+	display: inline-block;
+	background-size: 2em 2em;
+	background-repeat: no-repeat;
+}
+#nakami{
+	text-align:right;
+}
+#bun{
+	width:100%;
+}
+h1{
+	font-size:2em;
+	border-bottom:solid 5px #0d1d82;
+	margin-right:5em;
+	max-width:600px;
+	min-width:12em;
+	white-space: nowrap;
+}
+@media (prefers-color-scheme: dark) {
+	h1{
+		border-bottom-color:#5264d3
+	}
+}
+h2{
+	font-size:1.5em;
+}
+h1~p,h1~h2{
+	margin-left:16px;
+}
+h1~h2~p,h1~h2~ol{
+	margin-left:2em;
+}
+img{
+	width:30em;
+	height:auto;
+}
+/**/
+/*トップ*/
+.スクロール a{
+	outline: none;
+	user-select:none;
+}
+.中身{
+	text-align:center;
+	animation: 20s ease-in-out 0s infinite normal forwards running yoko;
+}
+@keyframes yoko{
+	0%{
+		transform: translate(0);
+	}
+	12.5%{
+		transform: translate(0);
+	}
+	25%{
+		transform: translate(-32em);
+	}
+	37.5%{
+		transform: translate(-32em);
+	}
+	50%{
+		transform: translate(-64em);
+	}
+	62.5%{
+		transform: translate(-64em);
+	}
+	75%{
+		transform: translate(-96em);
+	}
+	87.5%{
+		transform: translate(-96em);
+	}
+	100%{
+		transform: translate(-128em);
+	}
+}
+.aaaa{
+	width:32em;
+	padding:0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border:solid 1px #aaa;
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	margin-right: 8px;
+}
+.aaaa img{
+	font-size:16px;
+	width:30em;
+	margin:0 1em;
+}
+/**/
+/*入会手続き*/
+input[type='text'],input[type='tel']{
+	width:15em;
+	resize:none;
+	padding:0.5em;
+	margin:0.5em;
+	border:solid 1px #aaa;
+	border-radius:2em;
+	outline:none;
+}
+input[type='text']:focus,input[type='tel']:focus{
+	border:solid 1px #05f7ff;
+	box-shadow: 0 0 0 0.125em #05f7ff;
+}
+input[type='text']:invalid:focus,input[type='tel']:invalid:focus{
+	border:solid 1px #f00;
+	box-shadow: 0 0 0 0.125em #f00;
+}
+#決定{
+	border:solid 1px #aaa;
+	background-color:#fff;
+	padding:0.25em 0.5em;
+	border-radius:0.5em;
+	margin:0 2em;
+	cursor: pointer;
+}
+#決定:hover{
+	background-color:#f0f0f0;
+}
+@media (prefers-color-scheme: dark) {
+	#決定,input[type='text'],input[type='tel']{
+		background-color:#292929;
+		color:#ccc;
+		border-color:#666;
+	}
+	#決定:hover{
+		background-color:#393939
+	}
+}
+/**/
