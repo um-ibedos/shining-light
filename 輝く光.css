@@ -172,31 +172,31 @@ img{
 }
 @keyframes yoko {
 	0% {
-		transform: translate(0 * var(--scrollwidth));
+		transform: translate(calc(0 * var(--scrollwidth)));
 	}
 	12.5% {
-		transform: translate(0 * var(--scrollwidth));
+		transform: translate(calc(0 * var(--scrollwidth)));
 	}
 	25% {
-		transform: translate(1 * var(--scrollwidth));
+		transform: translate(calc(1 * var(--scrollwidth)));
 	}
 	37.5% {
-		transform: translate(1 * var(--scrollwidth));
+		transform: translate(calc(1 * var(--scrollwidth)));
 	}
 	50% {
-		transform: translate(2 * var(--scrollwidth));
+		transform: translate(calc(2 * var(--scrollwidth)));
 	}
 	62.5% {
-		transform: translate(2 * var(--scrollwidth));
+		transform: translate(calc(2 * var(--scrollwidth)));
 	}
 	75% {
-		transform: translate(3 * var(--scrollwidth));
+		transform: translate(calc(3 * var(--scrollwidth)));
 	}
 	87.5% {
-		transform: translate(3 * var(--scrollwidth));
+		transform: translate(calc(3 * var(--scrollwidth)));
 	}
 	100% {
-		transform: translate(4 * var(--scrollwidth));
+		transform: translate(calc(4 * var(--scrollwidth)));
 	}
 }
 .aaaa{
