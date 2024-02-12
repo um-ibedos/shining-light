@@ -120,7 +120,7 @@ a {
 #rogo{
 	height:2em;
 	width:2em;
-	background-image:url('/icon-512.png');
+	background-image:url('/shining-light/icon-512.png');
 	border-radius:1em;
 	box-shadow: 0 0 0.5em 0 #000;
 	transform: translate(0,0.25em);
@@ -170,33 +170,33 @@ img{
 	text-align:center;
 	animation: 20s ease-in-out 0s infinite normal forwards running yoko;
 }
-@keyframes yoko{
-	0%{
-		transform: translate(0);
+@keyframes yoko {
+	0% {
+		transform: translate(0 * var(--scrollwidth));
 	}
-	12.5%{
-		transform: translate(0);
+	12.5% {
+		transform: translate(0 * var(--scrollwidth));
 	}
-	25%{
-		transform: translate(-32em);
+	25% {
+		transform: translate(1 * var(--scrollwidth));
 	}
-	37.5%{
-		transform: translate(-32em);
+	37.5% {
+		transform: translate(1 * var(--scrollwidth));
 	}
-	50%{
-		transform: translate(-64em);
+	50% {
+		transform: translate(2 * var(--scrollwidth));
 	}
-	62.5%{
-		transform: translate(-64em);
+	62.5% {
+		transform: translate(2 * var(--scrollwidth));
 	}
-	75%{
-		transform: translate(-96em);
+	75% {
+		transform: translate(3 * var(--scrollwidth));
 	}
-	87.5%{
-		transform: translate(-96em);
+	87.5% {
+		transform: translate(3 * var(--scrollwidth));
 	}
-	100%{
-		transform: translate(-128em);
+	100% {
+		transform: translate(4 * var(--scrollwidth));
 	}
 }
 .aaaa{
@@ -209,11 +209,21 @@ img{
 	display: inline-flex;
 	align-items: center;
 	margin-right: 8px;
+	--scrollwidth: -32em;
 }
 .aaaa img{
 	font-size:16px;
 	width:30em;
 	margin:0 1em;
+}
+@media (max-width: 450px) {
+	.aaaa {
+		width:20em;
+		--scrollwidth: -20em;
+	}
+	.aaaa img {
+		width: 18em;
+	}
 }
 /**/
 /*入会手続き*/
