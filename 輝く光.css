@@ -97,6 +97,10 @@ header div{
 	width:auto;
 	height:auto;
 }
+img{
+	width:30em;
+	height:auto;
+}
 @media screen and (max-width : 450px){
 	iframe{
 		width:400px;
@@ -163,10 +167,6 @@ h1~p,h1~h2{
 }
 h1~h2~p,h1~h2~ol{
 	margin-left:2em;
-}
-img{
-	width:30em;
-	height:auto;
 }
 /**/
 /*トップ*/
