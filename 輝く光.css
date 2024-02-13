@@ -11,14 +11,14 @@
 @media (prefers-color-scheme: dark) {
 	html{
 		background-color:#292929;
-		color:#ccc;
+		color:#eee;
 	}
 	::selection{
 		background-color:#9c27b0;
 	}
 	input{
 		background-color:#292929;
-		color:#ccc;
+		color:#eee;
 	}
 	header{
 		filter: brightness(90%);
@@ -259,6 +259,8 @@ input[type='text']:invalid:focus,input[type='tel']:invalid:focus{
 	border-radius:0.5em;
 	margin:0 2em;
 	cursor: pointer;
+	font-weight: 400;
+	color: #292929;
 }
 #決定:hover{
 	background-color:#f0f0f0;
@@ -266,7 +268,7 @@ input[type='text']:invalid:focus,input[type='tel']:invalid:focus{
 @media (prefers-color-scheme: dark) {
 	#決定,input[type='text'],input[type='tel']{
 		background-color:#292929;
-		color:#ccc;
+		color:#eee;
 		border-color:#666;
 	}
 	#決定:hover{
