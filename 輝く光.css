@@ -31,7 +31,8 @@
 	}
 }
 *{
-	transition:0.25s ease 0s all;
+	transition:color,background-color;
+	transition:0.25s ease 0s;
 	width:auto;
 	height:auto;
 }
