@@ -31,8 +31,8 @@
 	}
 }
 *{
-	transition-property:color,background-color;
 	transition:0.25s ease 0s;
+	transition-property:color,background-color;
 	width:auto;
 	height:auto;
 }
