@@ -33,8 +33,6 @@
 *{
 	transition:0.25s ease 0s;
 	transition-property:color,background-color;
-	width:auto;
-	height:auto;
 }
 iframe{
 	width:600px;
@@ -72,19 +70,25 @@ header{
 	position: fixed;
 	top: 0;
 	left:0;
-	background:#faf8c3;
+	background:#fcfbc9;
 	white-space: nowrap;
-	overflow-x: auto;
+	overflow-x: scroll;
 	overflow-y: hidden;
 	user-select:none;
+	display: flex;
+	align-items: center;
 }
 header *{
-	display:inline-block;
+	display: inline-flex;
 	outline:none;
+	align-items: center;
 }
 header div{
 	width:10em;
 	height:1em;
+}
+header div:not(#menu){
+	margin-right:10em;
 }
 #ope{
 	position: fixed;
@@ -111,6 +115,9 @@ img{
 		width:25em;
 	}
 }
+header h2{
+	font-family: serif;
+}
 .head,header h2{
 	display: inline-block;
 	padding:1em;
@@ -134,9 +141,8 @@ a {
 	height:2em;
 	width:2em;
 	background-image:url('/shining-light/icon-512.png');
-	border-radius:1em;
-	box-shadow: 0 0 0.5em 0 #000;
-	transform: translate(0,0.25em);
+	border: 1.9px solid black;
+	border-radius: calc(1em + 2px);
 	display: inline-block;
 	background-size: 2em 2em;
 	background-repeat: no-repeat;
@@ -178,6 +184,10 @@ h1~h2~p,h1~h2~ol{
 .中身{
 	text-align:center;
 	animation: 20s ease-in-out 0s infinite normal forwards running yoko;
+}
+video{
+	width: 30em;
+	cursor: pointer;
 }
 @keyframes yoko {
 	0% {
