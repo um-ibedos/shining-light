@@ -102,17 +102,17 @@ header div:not(#menu){
 	width:auto;
 	height:auto;
 }
-img{
+img,video{
 	width:30em;
 	height:auto;
 }
 @media screen and (max-width : 450px){
 	iframe{
-		width:400px;
-		height:300px;
+		width:300px;
+		height:225px;
 	}
-	img{
-		width:25em;
+	img,video{
+		width:20em;
 	}
 }
 header h2{
@@ -186,7 +186,6 @@ h1~h2~p,h1~h2~ol{
 	animation: 20s ease-in-out 0s infinite normal forwards running yoko;
 }
 video{
-	width: 30em;
 	cursor: pointer;
 }
 @keyframes yoko {
