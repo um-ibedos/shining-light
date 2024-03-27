@@ -31,14 +31,29 @@
 		</script>
 		<script>
 			window.onload=()=>{
+				document.querySelector('.video').innerHTML=`
+					<video type="video/mp4" loop controls playsinline poster='/shining-light/thumbnail.png' tabindex='1' oncontextmenu="return false;">
+					</video>`;
 				var x=document.querySelector('video');
 				x.removeAttribute('controls');
 				x.onclick=()=>{
-					x.paused?x.play():x.pause();
+					if(x.innerHTML.replace(/\s+/gs,'')==''){
+						x.innerHTML=`
+						<source src='/shining-light/%E8%BC%9D%E3%81%8F%E5%85%89.mp4'>`;
+						x.play();
+					}else{
+						x.paused?x.play():x.pause();
+					}
 				};
 				x.onkeydown=(e)=>{
 					if(e.code=='Space'){
-						x.paused?x.play():x.pause();
+						if(x.innerHTML.replace(/\s+/gs,'')==''){
+							x.innerHTML=`
+							<source src='/shining-light/%E8%BC%9D%E3%81%8F%E5%85%89.mp4'>`;
+							x.play();
+						}else{
+							x.paused?x.play():x.pause();
+						}
 					}
 				};
 			};
@@ -97,9 +112,13 @@
 		<p>
 			<s><em>そのうち書く</em></s><br>
 			プロモーション動画<br>
-			<video type="video/mp4" loop controls playsinline poster='/shining-light/thumbnail.png' tabindex='1' oncontextmenu="return false;">
-				<source src='/shining-light/%E8%BC%9D%E3%81%8F%E5%85%89.mp4'>
-			</video>
+			<div class='video'>
+				<noscript>
+					<video type="video/mp4" loop controls playsinline poster='/shining-light/thumbnail.png' tabindex='1' oncontextmenu="return false;">
+						<source src='/shining-light/%E8%BC%9D%E3%81%8F%E5%85%89.mp4'>
+					</video>
+				</noscript>
+			</div>
 		</p>
 		<h1>
 			歴史
