@@ -88,7 +88,7 @@ header div{
 	height:1em;
 }
 header div:not(#menu){
-	margin-right:10em;
+	margin-right:20em;
 }
 #ope{
 	position: fixed;
